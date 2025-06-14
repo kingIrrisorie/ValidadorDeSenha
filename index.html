@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Validador de Senha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Validador de Senha</h1>
+        <input type="password" id="passwordInput" placeholder="Digite ou gere uma senha">
+        
+        <label>
+            <input type="checkbox" id="showPassword" onclick="togglePassword()"> Mostrar senha
+        </label>
+        
+        <button onclick="generatePassword()">Gerar Senha Forte</button>
+        
+        <div id="feedback"></div>
+        <div id="tips"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
